@@ -11,7 +11,7 @@
 <body>
     <div>
         <h2>Registrar Notas</h2>
-        <form method="post">
+        <form method="post"> <!-- Si no se especifica el action, por defecto se usa la url actual -->
             {% csrf_token %}
             {{ form.as_p }}
             <button>Procesar</button>
